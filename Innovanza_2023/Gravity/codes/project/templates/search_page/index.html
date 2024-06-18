@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="static/search_page/index.css"> -->
+  <style>
+    body{
+    /* color:red; */
+    background-color: white;
+
+}
+
+#leftbar{
+    background-color: white;
+    width: 900px;
+    max-height: 600px;
+    border-radius: 30px;
+    /* border: 1px solid black; */
+    padding-top: 10px;
+    overflow: scroll  ;
+    scroll-behavior: smooth;
+}
+
+
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input_field{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#rightbar{
+    background-color: white;
+    display: flex;
+    justify-content:flex-start;
+    text-align: center;
+    padding-top: 10px;
+    flex-direction:column;
+    width: 400px;
+    max-height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: -56px;
+    height: 500px;
+    margin-top: 17px;
+}
+
+
+#lowerarea{
+    background-color: rgb(248,248,248);
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20px;
+}
+
+.inside_leftnavbar{
+    display:flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 3%;
+    height:200px;
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+.inside_rightnavbar{
+    display:flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.inside_inside_leftnavbar{
+
+}
+
+.inside_inside_leftnavbar img{
+    width: 50px;
+    margin-left: 3px;
+    margin-top: 3px;
+    border-radius: 6px;
+}
+
+.inside_leftnavbar_inside_tag{
+    margin-top: 9px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.inside_inside_leftnavbar span{
+    /* width: 20px; */
+    margin-left:8px;
+}
+
+
+.right_heading_top{
+
+}
+
+.right_heading_top_image{
+    width: 60px;
+    margin-left: 3px;
+    margin-top: 3px;
+    border-radius: 6px;
+}
+
+.right_heading_top_name{
+
+}
+
+.right_heading_top_details{
+
+}
+
+.right_heading_top_icons{
+
+}
+
+#filter{
+
+}
+
+#CategoryText{
+
+
+}
+
+#category_input{
+
+
+}
+
+#location_input{
+
+
+}
+
+#locationText{
+
+  
+}
+
+.companyname{
+  color: rgb(156,150,143);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.internship{
+  font-weight: bold;
+}
+
+#filterText{
+  width: 40px;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#filterIcon{
+  width: 40px;
+  height: 40px;
+}
+
+#button {
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color:  #17b6ab;;
+    }
+#button:hover {
+        color: #111;
+        background: #39ff14;
+        box-shadow: 0 0 50px #39ff14;
+    }
+
+
+.rightnavbar_inside_tag{
+    border: 2px solid black;
+    display: inline;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+#workbox{
+
+}
+
+#submitb{
+border-radius: 10px;
+margin-top: 20px;
+
+}
+
+
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+  <div>
+    <div>
+      <div style="height: 50px; background-color: rgb(156,150,143);">
+
+      </div>
+
+      </div>
+    </div>
+    <div id="lowerarea">
+      <div id="rightbar" class="input_field">
+
+        <div id="filter">
+          <img src="static/icons/filter.png" alt="image" id="filterIcon"/>
+          <span id="filterText">Filter</span>
+        </div>
+
+        <form method="post" action="search_page">
+          {% csrf_token %}
+          <div id="category" style="display: flex; flex-direction: column; margin-top: 30px;">
+            <span id="CategoryText">Category</span>
+            <input type="text" name="category" id="category_input" placeholder="e.g. Programming" style="border-radius: 10px; width: 370px; margin-left: 15px; text-align: center;"><br/>
+          </div>
+          
+          <div id="location" style="display: flex; flex-direction: column;">
+            <span id="locationText">Location</span>
+            <input type="text" name="location" id="location_input" placeholder="e.g. Jhansi" style="border-radius: 10px; width: 370px; margin-left: 15px; text-align: center;"><br/>
+            </div>
+          
+          <div id="workbox" style="display: flex; flex-direction:row; align-items:center; align-items: center; padding-left: 120px;">
+            <label for="work" style="margin-right: 10px;">Work From Home</label><br>
+            <input type="radio" id="submitb" name="radio"  value="true" style="margin-top: 4px;"/>
+            </div>
+          <input type="submit" value="Submit" style="margin-top: 20px;" >  
+        </form>
+      </div>
+<!--
+
+        data["internship_name"]=filter_string(content.find("a",class_="view_detail_button").get_text())
+        data["company_name"]=filter_string(content.find("a",class_="link_display_like_text view_detail_button").get_text())
+        data["location"]=filter_string(content.find("a",class_="location_link view_detail_button").get_text())
+        data["upload_duration"]=filter_string(content.find("div",class_="posted_by_container").get_text())
+        data["CTC"]=filter_string(content.find("span",class_="stipend").get_text())
+        data["type"]=filter_string(content.find("div",class_="status status-small status-inactive").get_text())
+        data["apply_link"]=filter_string(content.find_all("div",class_="btn btn-primary b2b_apply_now")[0].get("data-redirect_url"))
+        data["duration"]=filter_string(content.find_all("div",class_="item_body")[1].get_text())
+-->
+
+<!-- {% if athlete_list %}
+
+{% endif %} -->
+
+
+<div id="leftbar">
+  {% for data in context %}
+        
+          <div class="inside_leftnavbar" style="display: flex;">
+            <div class="internship">{{data.internship_name}}</div>
+            <div class="companyname">{{data.company_name}}</div>
+            <div class="location" style="display: flex;  flex-direction:row; margin-top: 15px;">
+              <img src="static/icons/loc.png" alt="img" style="display: block; width: 20px;"/>
+              <div class="location">{{data.location}}</div>
+            </div>
+            <!-- <div>
+
+              <div class="upload_duration">{{data.upload_duration}}</div>
+            </div> -->
+            
+              <div class="CTC" style="margin-top: 6px;">
+                <img src="static/icons/coin.png" style="width: 20px;"/>
+                {{data.CTC}}
+        
+                <img src="static/icons/duration.png" style="width: 20px; margin-left: 10px;"/>
+                {{data.upload_duration}}
+                <img src="static/icons/startpng.png" style="width: 20px; margin-left: 10px;"/>
+                {{data.duration}}
+              </div>
+            <!-- <div class="type">{{data.type}}</div> -->
+            <div>
+              <!-- <span >APPLY NOW</span> -->
+              <button id="button" onclick=" window.open('{{data.apply_link}}','_blank')" >
+                Click Here
+              </button>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+
+
+    </div>
+  </div>
+  <script src="static/search_page/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

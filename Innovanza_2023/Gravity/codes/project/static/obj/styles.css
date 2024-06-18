@@ -1,0 +1,106 @@
+body{
+    background-color: #E3FDFD !important;
+    color: #222831;
+}
+
+hr
+{
+    border-left: 10%;
+}
+.card
+{
+    margin:2.5%;
+}
+.card-set
+{
+    display: flex;
+    padding-left:5%;
+    padding-right:5%;
+    
+}
+
+.foot
+{
+    margin-left:40px;
+    margin-right:40px;
+}
+.rest{
+    display: flex;
+    flex-direction: row-reverse;
+ }
+ 
+.section
+{
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.stats
+{
+   padding-left:5%;
+    padding-right:5%;
+}
+
+.stats-img
+{
+    display:flex;
+    padding:5%;
+}
+.img-text
+{
+    padding-left:5%;
+    padding-right:5%;
+}
+.img-text1
+{
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.point
+{
+    height:60px;
+    width:500px;
+    margin-bottom:20px;
+    padding-top:20px;
+    background-color: aliceblue;
+}
+
+#nav
+{
+    background-color: #71C9CE;
+}
+#footer
+{
+    display:flex;
+    padding-left:10%;
+    padding-right: 10%;
+}
+#logo
+{
+    width: 200px;
+    height: 40px;
+    padding-left: 10px ;
+}
+
+#industries
+{
+    display: flex;
+    padding: 7%;
+}
+
+#text-ind
+{
+    padding:100px;
+    max-width: 50%;
+    text-align: left;
+}
+
+#points-ind
+{
+    padding-left:5%;
+}
+
+#footer-info
+{
+    padding-left: 12%;
+}

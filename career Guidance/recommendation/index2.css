@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: poppins;
+	font-size: 16px;
+	color: #fff;
+}
+.form-box {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto auto;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 142vh;
+    height: 76vh;
+}
+.form-box:before {
+	background-image: url("https://i.postimg.cc/8cnYLpfc/ddddd.jpg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+    /* opacity: 0; */
+	display: block;
+	filter: blur(2px);
+}
+.form-box .header-text {
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-align: center;
+}
+/* .form-box input {
+	margin: 10px 0px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: poppins;
+} */
+/* .form-box input[type=checkbox] {
+	display: none;
+} */
+/* .form-box label {
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	top: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+} */
+.form-box label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+    opacity: 0;
+	background-color: #ddd;
+}
+/* .form-box :checked+label:before {
+	content: "\2713";
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	line-height: 20px;
+} */
+.form-box span {
+	font-size: 14px;
+}
+/* .form-box button {
+	background-color: deepskyblue;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
+} */
+span a {
+	color: #BBB;
+}
+
+
+
+/* here */
+
+body
+{
+    background-image: url("./images/joshua-hoehne-iggWDxHTAUQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 50%; */
+}
+
+#container
+{
+    /* background-color: antiuewhite; */
+    opacity: 100%;
+    width: 139vh;
+    height: 73vh;
+    flex-direction: row;
+    display: inline;
+    border-radius: 4vh;
+    padding-top: 5vh;
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+label
+{
+    cursor: pointer;
+    width: 22vh;
+}
+#add
+{
+    position: absolute;
+    top: 78vh;
+    left: 7vh;
+    width: 7vh;
+    height: 6vh;
+}
+.field
+{
+    width: 100%;
+    justify-content: center;
+    font-family: cursive;
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    text-align: center;
+    margin-top: 23px;
+}
+::-webkit-scrollbar
+{
+    width: 0vh;
+}
+.specific
+{
+    margin-left: 66vh;
+    border-radius: 2vh;
+    width: 15vh;
+    text-align: center;
+}
+
+#button
+{
+    position: absolute;
+    top: 79vh;
+    left: 122vh;
+    height: 4vh;
+    width: 12vh;
+}
+.other
+{
+    width: 46vh;
+    position: relative;
+    height: 4vh;
+    display: flex;
+    justify-content: space-around;
+}
+.others
+{
+    /* background-color: aqua; */
+    width: 100%;
+    /* opacity: 0; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.box
+{
+    margin-left: 11px;
+    margin-right: 63vh;
+    position: relative;
+    top: 2vh;
+    width: 20vh;
+    background-color: #0b01038c;
+    opacity: 92%;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+}
+.other_data
+{
+    opacity: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    /* background-color: pink; */
+}
+
+#text-quote
+{
+    position: absolute;
+    top: -9vh;
+    left: 17vh;
+    width: 121vh;
+    font-size: 6vh;
+    font-family: 'Rubik Moonrocks';
+    color: rgb(8 47 230 / 92%);
+}

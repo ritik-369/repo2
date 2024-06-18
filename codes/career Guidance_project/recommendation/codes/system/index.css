@@ -1,0 +1,53 @@
+#add{
+    justify-content: center;
+    width: 3vh;
+    height: 3vh;
+    position: absolute;
+    top: 41vh;
+    left: 20vh;
+    color: white;
+    background-color: rgb(41, 220, 41);
+}
+.about{
+    display: flex;
+    width: 100%;
+    margin-bottom: 3vh;
+    height: 9vh;
+    justify-content: normal;
+}
+.field{
+    display: inline;
+    background-color: pink;
+    height: 10vh;
+    border-radius: 3vh;
+    margin-right: -14vh;
+    width: 103vh;
+}
+.value{
+    display: inline;
+    background-color: pink;
+    border-radius: 2vh;
+    margin-left: 15vh;
+    height: 10vh;
+    width: 22vh;
+}
+#submit{
+    position: absolute;
+    top: 50vh;
+    left: 18vh;
+    background-color: aqua;
+}
+#container{
+    position: absolute;
+    top: 24vh;
+    left: 29vh;
+    width: 128vh;
+    height: 60vh;
+    overflow: scroll;
+    display: inline;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    border-radius: 3vh;
+    border-color: orange;
+
+}

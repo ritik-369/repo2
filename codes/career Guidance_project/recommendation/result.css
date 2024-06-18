@@ -1,0 +1,35 @@
+#container{
+    position: absolute;
+    top: 24vh;
+    left: 29vh;
+    width: 128vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    border-radius: 3vh;
+    border-color: orange;
+}
+#field1
+{
+    background-color: pink;
+    margin-bottom: 1vh;
+}
+#field2
+{
+    background-color: orange;
+}
+
+.field
+{
+    margin: 5vh;
+    border-radius: 5vh;
+    height: 22vh;
+    align-items: center;
+    width: 118vh;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,142 @@
+body{
+    /* color:red; */
+    /* background-color: pink; */
+
+}
+
+#leftbar{
+    background-color: pink;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 900px;
+    max-height: 600px;;
+    overflow: scroll;
+    margin-top: 8px;
+    padding-top:10px;
+    border-radius: 30px;
+}
+
+#leftbars{
+    /* background-color: pink;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 900px;
+    max-height: 600px;;
+    overflow: scroll;
+    margin-top: 8px;
+    padding-top:10px;
+    border-radius: 30px; */
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input_field{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#rightbar{
+    /* background-color: yellow; */
+    display: inline-flex;
+    justify-content: center;
+    flex-direction:column;
+    width: 400px;
+    max-height: 600px;;
+    overflow: scroll;
+    margin-left: -56px;
+    height: 500px;
+    margin-top: 17px;
+}
+
+
+#lowerarea{
+    background-color: gray;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20px;
+}
+
+.inside_leftnavbar{
+    display:flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 3%;
+    height:200px;
+    background-color: orange;
+}
+
+
+.inside_rightnavbar{
+    display:flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.inside_inside_leftnavbar{
+
+}
+
+.inside_inside_leftnavbar img{
+    width: 50px;
+    margin-left: 3px;
+    margin-top: 3px;
+    border-radius: 6px;
+}
+
+.inside_leftnavbar_inside_tag{
+    margin-top: 9px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.inside_inside_leftnavbar span{
+    /* width: 20px; */
+    margin-left:8px;
+}
+
+
+.right_heading_top{
+
+}
+
+.right_heading_top_image{
+    width: 60px;
+    margin-left: 3px;
+    margin-top: 3px;
+    border-radius: 6px;
+}
+
+.right_heading_top_name{
+
+}
+
+.right_heading_top_details{
+
+}
+
+.right_heading_top_icons{
+
+}
+
+
+.rightnavbar_inside_tag{
+    border: 2px solid black;
+    display: inline;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+

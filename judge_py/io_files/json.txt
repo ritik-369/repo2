@@ -1,0 +1,5 @@
+"int no_of_digits(int number)",
+"{",
+"   if(!number)return 1;",
+"   return log10(number)+1;",
+"}",

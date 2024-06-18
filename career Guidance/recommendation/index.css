@@ -1,0 +1,104 @@
+
+body
+{
+    background-image: url("./images/joshua-hoehne-iggWDxHTAUQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 50%; */
+}
+
+#container
+{
+    /* background-color: antiuewhite; */
+    opacity: 100%;
+    background-color: #cbb8b861;
+    width: 139vh;
+    height: 55vh;
+    flex-direction: row;
+    display: inline;
+    border-radius: 4vh;
+    padding-top: 5vh;
+    position: absolute;
+    top: 10vh;
+    left: 20vh;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+label
+{
+    cursor: pointer;
+    width: 22vh;
+}
+#add
+{
+    position: absolute;
+    background-color: cyan;
+    top: 43vh;
+    left: 13vh;
+    width: 5vh;
+    height: 5vh;
+}
+.field
+{
+    background-color: pink;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.specific
+{
+    background-color: yellow;
+    margin-left: 41vh;
+    background-color: yellow;
+    margin-left: 41vh;
+    width: 16vh;
+    text-align: center;
+}
+
+#button
+{
+    position: absolute;
+    top: 71vh;
+    left: 76vh;
+    height: 4vh;
+    width: 12vh;
+}
+.other
+{
+    background-color: pink;
+    width: 100%;
+    /* opacity: 0; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.others
+{
+    background-color: aqua;
+    width: 100%;
+    /* opacity: 0; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.box
+{
+    background-color: coral;
+    margin-left: -58px;
+    margin-right: 257px;
+    text-align: center;
+    border-radius: 16px;
+}
+.other_data
+{
+    opacity: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    background-color: pink;
+}

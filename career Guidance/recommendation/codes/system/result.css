@@ -1,0 +1,12 @@
+#container{
+    position: absolute;
+    top: 24vh;
+    left: 29vh;
+    width: 128vh;
+    height: 60vh;
+    display: inline;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    border-radius: 3vh;
+    border-color: orange;
+}

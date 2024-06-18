@@ -1,0 +1,54 @@
+#container
+{
+    background-color: antiquewhite;
+    width: 139vh;
+    height: 79vh;
+    flex-direction: column;
+    display: flex;
+    border-radius: 0vh;
+    padding-top: 5vh;
+    position: absolute;
+    top: 10vh;
+    left: 20vh;
+}
+#background
+{
+    background-image: url("./images/rating.jpg");
+}
+.name
+{
+    background-color: yellow;
+    font-size: 22px;
+    width: 6vh;
+}
+
+.select
+{
+    background-color: pink;
+}
+
+option
+{
+    background-color: aqua;
+}
+
+.field
+{
+    display: flex;
+    margin-bottom: 35px;
+    justify-content: space-around;
+}
+#btn
+{
+    width: 10vh;
+    height: 5vh;
+    background-color: #00dcff;
+    position: absolute;
+    top: 34vh;
+    left: 10vh; width: 8vh;
+    height: 8vh;
+    background-color: green;
+    position:absolute;
+    top: 10vh;
+    left: 10vh;
+}

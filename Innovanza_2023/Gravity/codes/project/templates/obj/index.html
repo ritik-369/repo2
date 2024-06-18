@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternAt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+    <style>
+        body{
+    background-color: #E3FDFD !important;
+    color: #222831;
+}
+
+hr
+{
+    border-left: 10%;
+}
+.card
+{
+    margin:2.5%;
+}
+.card-set
+{
+    display: flex;
+    padding-left:5%;
+    padding-right:5%;
+    
+}
+
+.foot
+{
+    margin-left:40px;
+    margin-right:40px;
+}
+.rest{
+    display: flex;
+    flex-direction: row-reverse;
+ }
+ 
+.section
+{
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.stats
+{
+   padding-left:5%;
+    padding-right:5%;
+}
+
+.stats-img
+{
+    display:flex;
+    padding:5%;
+}
+.img-text
+{
+    padding-left:5%;
+    padding-right:5%;
+}
+.img-text1
+{
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.point
+{
+    height:60px;
+    width:500px;
+    margin-bottom:20px;
+    padding-top:20px;
+    padding-left: 2%;
+    background-color: aliceblue;
+}
+
+#nav
+{
+    background-color: #71C9CE;
+}
+#footer
+{
+    display:flex;
+    padding-left:10%;
+    padding-right: 10%;
+}
+#logo
+{
+    width: 200px;
+    height: 40px;
+    padding-left: 10px ;
+}
+
+#industries
+{
+    display: flex;
+    padding: 7%;
+}
+
+#text-ind
+{
+    padding:100px;
+    max-width: 50%;
+    text-align: left;
+}
+
+#points-ind
+{
+    padding-left:5%;
+}
+
+#footer-info
+{
+    padding-left: 12%;
+}
+    </style>
+</head>
+<body>
+
+    <div id="nav">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand ms-auto " href="#" ><img id="logo" src="/static/obj/internat.png" alt="InternAt" width="30" height="24"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse  rest" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ml-auto" >
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Company
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="/static/obj/HomePage-AV-VC.png" style="opacity:100;" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/static/obj/Home-Page-CRN-Award.png" style="opacity:100;" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="stats section" style="background-color: #CBF1F5;">
+        <h3 style="text-align: center; color: #4ac6e9;">Our Stats</h3>
+        <h2 style="text-align: center; color: #002d6a; padding-bottom: 10px;">InternAt </h2>
+        <p style=" text-align: center;"><span>InternAt is modern techno era technology especially designed to provide hands on collaborative consultation backed by several industry training along with a certification for new interns. From providing internship to give interns new skills and tips for interview, we work in partnership with our client and several other internship providing companies to meet their goals and requirement
+        </span>.</p>
+
+        <div class="stats-img">
+            <div class="img-text">
+                <img src="/static/obj/stat-icon-2.svg" style="height: 200px;width:200px ;margin-left:auto;margin-right: auto;" alt=".......">
+                <h3 style="text-align: center;">More than 5 internship websites</h3>
+            </div>
+            <div class="img-text">
+                <img src="/static/obj/stat-icon-1.svg" style="height: 200px;width:200px ;align:center;" alt=".......">
+                <h3 style="text-align: center;">100+ live users</h3>
+            </div>
+            <div class="img-text">
+                <img src="/static/obj/stat-icon-3.svg" style="height: 200px;width:200px ;align:center;" alt=".......">
+                <h3 style="text-align: center;">Backed by trusted interns</h3>
+            </div>
+            
+        </div>
+
+    </div>
+
+    
+    <div class="section" id="solutions" style="background-color: #E3FDFD;">
+        <h3 style="text-align: center; color: #4ac6e9;">Explore</h3>
+        <h2 style="text-align: center; color: #002d6a">Our Services</h2>
+        <div class="card-set">
+            <div class="card" style="width: auto;">
+                <img src="collaboration-communications-solutions-homepage-icon.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Internships Finder</h5>
+                <p class="card-text">Provide interships for the users on the basis of criteria filled.</p>
+                </div>
+            </div>
+            <div class="card" style="width: auto;">
+                <img src="services-homepage-icon.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Tips for interns</h5>
+                <p class="card-text">Provide tips for internships based on the inputs provided from trusted sources.</p>
+                
+                </div>
+            </div>
+            <div class="card" style="width: auto;">
+                <img src="managed-services-homepage-icon.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Previous questions</h5>
+                <p class="card-text">Previous questions on the specific internship opportunities as asked.</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="industries" style="background-color: #CBF1F5;">
+        <div id="text-ind">
+            <h2>Industries</h2>
+            <h3 style="text-align: left;"><span>Internships for all fields</span></h3>
+            <h6><span>Leveraging our extensive knowledge from working with interns across a diverse set of markets, we develop creative, custom solutions designed for your specific choice</span>.</h6>
+        </div>        
+        <div id="points-ind">
+            <div class="point";style='color:rgb(72, 14, 14);font-size:17px;padding-left:10px;'><h3>Finance</h3></div>
+            <div class="point";style='color:rgb(72, 14, 14);font-size:17px;padding-left:10px;'><h3>Management</h3></div>
+            <div class="point";style='color:rgb(72, 14, 14);font-size:17px;padding-left:10px;'><h3>Engineering</h3></div>
+            <div class="point";style='color:rgb(72, 14, 14):font-size:17px;padding-left:10px;'><h3>Content-writing</h3></div>
+            <div class="point";style='color:rgb(72, 14, 14);font-size:17px;padding-left:10px;'><h3>Video-editing</h3></div>
+            <div class="point";style='color:rgb(72, 14, 14);font-size:17px;padding-left:10px;'><h3>Image-editing</h3></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div id="footer">
+            <div class="foot" style="width:300px">
+                <h3 style="text-align: left; padding-bottom: 1em;"><span style="color: #002d6a;">About Us</span></h3>
+                <p>InternAt helps more than 100 customers worldwide adapt to a rapidly changing industry.</p>
+                <p>&nbsp;</p>
+                <p><img id="logo" src="/static/obj/internat.png" alt="InternAt" width="30" height="24"></p>
+            </div>
+            <div class="foot">
+                <h3 style="text-align: left; padding-bottom: 1em;"><span style="color: #002d6a;">Quick Links</span></h3>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: .4em;"><a href="/us/about-us">About Us</a></li>
+                    <li style="margin-bottom: .4em;"><a href="/us/careers">Careers</a></li>
+                    <li style="margin-bottom: .4em;"><a href="/us/locations">Locations</a></li>
+                    <li style="margin-bottom: .4em;"><a href="/us/contact-us">Contact Us</a></li>
+                    <li style="margin-bottom: .4em;"><a href="/us/client-support">Client Support</a></li>
+                    <li style="margin-bottom: .4em;"></li>
+                </ul>
+            </div>
+            <div class="foot" style="width:300px">
+                <h3 style="text-align: left; padding-bottom: 1em;"><span style="color: #002d6a;">Stay in Touch</span></h3>
+                <p>Get internship news, insights and the information you need delivered straight to your inbox.</p>
+                <div ><a href="#" style="font-size: 13px; padding: 12px 20px;">SUBSCRIBE NOW</a></div>
+            </div>
+            <div class="foot">
+                <h3 style="text-align: left; padding-bottom: 1em;"><span style="color: #002d6a;">Contact Us</span></h3>
+                <h4 ><a href="tel:+1-877-696-7720"><span style="color: #4ac6e9; font-weight: 100;">877-696-7720</span></a></h4>
+            </div>
+        </div>
+        <hr>
+        <div id="footer-info">
+            <p>© 2023 Gravity Technology <a href="/us/privacy-policy">Privacy Policy</a>   |   <a href="/us/cookie-policy">Cookie Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
